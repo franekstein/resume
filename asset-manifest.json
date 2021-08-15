@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/static/js/main.eb273a90.chunk.js",
+    "main.js.map": "/static/js/main.eb273a90.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2affb8fe.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2affb8fe.js.map",
+    "static/js/2.b3cd14ba.chunk.js": "/static/js/2.b3cd14ba.chunk.js",
+    "static/js/2.b3cd14ba.chunk.js.map": "/static/js/2.b3cd14ba.chunk.js.map",
+    "static/js/3.89915956.chunk.js": "/static/js/3.89915956.chunk.js",
+    "static/js/3.89915956.chunk.js.map": "/static/js/3.89915956.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.b3cd14ba.chunk.js.LICENSE.txt": "/static/js/2.b3cd14ba.chunk.js.LICENSE.txt",
+    "static/media/Photo.219acc41.jpg": "/static/media/Photo.219acc41.jpg",
+    "static/media/email.349a49cc.svg": "/static/media/email.349a49cc.svg",
+    "static/media/github.4a12ba1c.svg": "/static/media/github.4a12ba1c.svg",
+    "static/media/linkedin.0db2c5c4.svg": "/static/media/linkedin.0db2c5c4.svg",
+    "static/media/phone.d90236b4.svg": "/static/media/phone.d90236b4.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2affb8fe.js",
+    "static/js/2.b3cd14ba.chunk.js",
+    "static/js/main.eb273a90.chunk.js"
+  ]
+}
