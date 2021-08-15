@@ -1,16 +1,17 @@
-import { FunctionComponent } from 'react';
-import photo from './Photo.jpg';
 import styled from '@emotion/styled';
 import { medias } from '../../styles/medias';
 
-type OwnProps = {};
+type OwnProps = {
+  circle?: boolean;
+};
 
-type ImageProps = OwnProps;
+type ImageProps = JSX.IntrinsicElements['img'] & OwnProps;
 
-const StyledImage = styled.img`
+const StyledImage = styled.img<ImageProps>`
   max-width: 5rem;
   max-height: 5rem;
-
+  border-radius: ${({ circle }) => (circle ? '50%' : 0)} 
+  
   ${medias.m} {
     max-width: 7.5rem;
     max-height: 7.5rem;
@@ -22,8 +23,4 @@ const StyledImage = styled.img`
   }
 `;
 
-const Image: FunctionComponent<ImageProps> = () => {
-  return <StyledImage width="150px" height="150px" src={photo} alt="Damian Kieliszek" />;
-};
-
-export default Image;
+export default StyledImage;

@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import { typo_9_13 } from '../../styles/typography';
-import Icon from '../Icon/Icon';
 import { medias } from '../../styles/medias';
+import { Icon } from '..';
 
 export type IconShape = 'email' | 'github' | 'phone' | 'linkedin';
 

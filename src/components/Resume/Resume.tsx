@@ -1,14 +1,12 @@
 import { FunctionComponent } from 'react';
-import { Head, Note } from '..';
-import Contact from '../Contact/Contact';
-import Description from '../Description/Description';
-import SectionHeader from '../SectionHeader/SectionHeader';
-import SectionItem from '../SectionItem/SectionItem';
+import { Contact, Description, Head, Note, SectionHeader, SectionItem } from '..';
 import styled from '@emotion/styled';
 import { medias } from '../../styles/medias';
+import Photo from './Photo.jpg';
 
 const data = {
   bio: {
+    image: Photo,
     name: 'Damian Kieliszek',
     position: 'Frontend Developer',
     description: `👋 Hi! I’m Damian! 
@@ -198,7 +196,7 @@ const Resume: FunctionComponent<ResumeProps> = () => {
   return (
     <StyledContainer>
       <header style={{ gridArea: 'head' }}>
-        <Head name={data.bio.name} position={data.bio.position} />
+        <Head name={data.bio.name} position={data.bio.position} image={data.bio.image} />
       </header>
       <nav style={{ gridArea: 'contact' }}>
         <Contact links={data.bio.links as any} />

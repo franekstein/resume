@@ -1,4 +1,10 @@
-export { default as Resume } from './Resume/Resume';
+export { default as Button } from './Button/Button';
+export { default as Contact } from './Contact/Contact';
+export { default as Description } from './Description/Description';
 export { default as Head } from './Head/Head';
+export { default as Icon } from './Icon/Icon';
+export { default as Image } from './Image/Image';
 export { default as Note } from './Note/Note';
+export { default as Resume } from './Resume/Resume';
 export { default as SectionHeader } from './SectionHeader/SectionHeader';
+export { default as SectionItem } from './SectionItem/SectionItem';
