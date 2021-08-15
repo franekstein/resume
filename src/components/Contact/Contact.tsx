@@ -2,6 +2,7 @@ import { FunctionComponent } from 'react';
 import styled from '@emotion/styled';
 import { typo_9_13 } from '../../styles/typography';
 import Icon from '../Icon/Icon';
+import { medias } from '../../styles/medias';
 
 export type IconShape = 'email' | 'github' | 'phone' | 'linkedin';
 
@@ -32,6 +33,11 @@ const StyledLink = styled.a`
   color: var(--color-grey-300);
   text-decoration: none;
   transition: color 0.2s ease-out;
+  padding: 0.4rem 0;
+
+  ${medias.m} {
+    padding: 0;
+  }
 
   &:hover {
     color: var(--color-grey-500);
