@@ -7,12 +7,12 @@ type OwnProps = {
 
 type ImageProps = JSX.IntrinsicElements['img'] & OwnProps;
 
-const StyledImage = styled.img<ImageProps>`
+export default styled.img<ImageProps>`
   max-width: 5rem;
   max-height: 5rem;
-  border-radius: ${({ circle }) => (circle ? '50%' : 0)} 
+  border-radius: ${({ circle }) => (circle ? '50%' : 0)};
   
-  ${medias.m} {
+  ${medias.s} {
     max-width: 7.5rem;
     max-height: 7.5rem;
   }
@@ -22,5 +22,3 @@ const StyledImage = styled.img<ImageProps>`
     max-height: 5rem;
   }
 `;
-
-export default StyledImage;
