@@ -23,8 +23,9 @@ export default styled.a`
 
   &:active,
   &:focus {
+    outline: none;
     color: var(--color-grey-500);
-    outline: 0.1rem solid var(--color-grey-500);
+    box-shadow: 0 0 0 0.1rem var(--color-grey-500);
   }
 
   @media print {
