@@ -37,7 +37,7 @@ const StyledButton = styled.a`
   appearance: none;
   display: flex;
   color: var(--color-grey-300);
-  border: 0.1rem solid var(--color-grey-200);
+  border: 0.1rem solid var(--color-grey-300);
   border-radius: 0.2rem;
   box-shadow: none;
   padding: 0.8rem;

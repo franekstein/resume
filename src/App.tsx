@@ -38,7 +38,7 @@ function App() {
 
           @media print {
             html {
-              font-size: 90%;
+              font-size: 88%;
             }
           }
 

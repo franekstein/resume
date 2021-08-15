@@ -8,7 +8,7 @@ type OwnProps = {
 
 type SectionHeaderProps = OwnProps;
 
-const StyledHeading = styled.h2`
+const StyledHeading = styled.h1`
   ${typo_10_15_bold}
   margin: 0;
   color: var(--color-grey-400);

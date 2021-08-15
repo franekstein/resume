@@ -156,7 +156,7 @@ const StyledContainer = styled.article`
       'competences experience'
       'note note';
     column-gap: 3.2rem;
-    row-gap: 3.2rem;
+    row-gap: 2.8rem;
   }
 
   @media print {
@@ -170,7 +170,7 @@ const StyledContainer = styled.article`
       'competences experience'
       'note note';
     column-gap: 3.2rem;
-    row-gap: 3.2rem;
+    row-gap: 2.8rem;
   }
 `;
 
@@ -208,18 +208,18 @@ const Resume: FunctionComponent<ResumeProps> = () => {
       </section>
       <StyledCompetences>
         <SectionHeader content={data.competences.header} />
-        {data.competences.items.map((item) => (
-          <SectionItem {...item} />
+        {data.competences.items.map((item, index) => (
+          <SectionItem key={`competences-item-${index}`} {...item} />
         ))}
       </StyledCompetences>
       <StyledExperience style={{ gridArea: 'experience' }}>
         <SectionHeader content={data.experience.header} />
-        {data.experience.items.map((item) => (
-          <SectionItem listStyle="simple" {...item} />
+        {data.experience.items.map((item, index) => (
+          <SectionItem key={`experience-item-${index}`} listStyle="simple" {...item} />
         ))}
         <SectionHeader content={data.education.header} />
-        {data.education.items.map((item) => (
-          <SectionItem listStyle="simple" {...item} />
+        {data.education.items.map((item, index) => (
+          <SectionItem key={`education-item-${index}`} listStyle="simple" {...item} />
         ))}
       </StyledExperience>
       <footer style={{ gridArea: 'note' }}>

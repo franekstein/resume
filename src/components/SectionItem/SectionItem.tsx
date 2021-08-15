@@ -13,20 +13,25 @@ type OwnProps = {
 type SectionItemProps = JSX.IntrinsicElements['section'] & OwnProps;
 
 const StyledSection = styled.section`
-  & > * + * {
-    margin-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    margin-bottom: 0.4rem;
   }
 `;
 
-const StyledSubheader = styled.h4`
+const StyledSubheader = styled.h3`
   ${typo_9_13}
-  margin: 0;
-  color: var(--color-grey-200);
+  order: 1;
+  margin-top: 0;
+  color: var(--color-grey-300);
 `;
 
-const StyledHeader = styled.h4`
+const StyledHeader = styled.h2`
   ${typo_10_15_bold}
-  margin: 0;
+  order: 2;
+  margin-top: 0;
   color: var(--color-grey-400);
 `;
 
@@ -37,6 +42,7 @@ const StyledHeaderDescription = styled.span`
 
 const StyledList = styled.ul`
   ${typo_8_12}
+  order: 3;
   color: var(--color-grey-300);
   list-style: none;
 `;
@@ -57,15 +63,15 @@ const SectionItem: FunctionComponent<SectionItemProps> = ({
 }) => {
   return (
     <StyledSection {...rest}>
-      {subheader && <StyledSubheader>{subheader}</StyledSubheader>}
       <StyledHeader>
         {header}
         {headerDescription && <StyledHeaderDescription> @ {headerDescription}</StyledHeaderDescription>}
       </StyledHeader>
+      {subheader && <StyledSubheader>{subheader}</StyledSubheader>}
       {list && (
         <StyledList>
-          {list.map((item) => (
-            <StyledItem listStyle={listStyle}>{item}</StyledItem>
+          {list.map((item, index) => (
+            <StyledItem key={`section-item-element-${index}`} listStyle={listStyle}>{item}</StyledItem>
           ))}
         </StyledList>
       )}

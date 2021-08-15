@@ -61,9 +61,9 @@ const StyledLink = styled.a`
 const Contact: FunctionComponent<ContactProps> = ({ links }) => {
   return (
     <StyledList>
-      {links.map(({ icon, name, link }) => {
+      {links.map(({ icon, name, link }, index) => {
         return (
-          <StyledItem>
+          <StyledItem key={`contact-item-${index}`}>
             <StyledLink href={link}>
               <Icon shape={icon} />
               {name}
