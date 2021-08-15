@@ -37,6 +37,15 @@ const StyledLink = styled.a`
     color: var(--color-grey-500);
   }
 
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: var(--color-grey-500);
+    text-decoration-thickness: 0.1rem;
+    color: var(--color-grey-500);
+    outline: none;
+  }
+
   & > * {
     margin-right: 0.4rem;
     width: 1.2rem;
