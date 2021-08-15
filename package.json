@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://franekstein.github.io",
+  "homepage": "https://franekstein.github.io/resume",
   "dependencies": {
     "@babel/plugin-transform-react-jsx": "^7.14.9",
     "@craco/craco": "^6.2.0",
@@ -28,7 +28,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages master -d build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "serve": "yarn build && serve -s build",
