@@ -10,8 +10,13 @@ type NoteProps = OwnProps;
 
 const StyledParagraph = styled.p`
   ${typo_6_9}
+  display: none;
   margin: 0;
   color: var(--color-grey-400);
+
+  @media print {
+    display: flex;
+  }
 `;
 
 const Note: FunctionComponent<NoteProps> = ({ content }) => {

@@ -15,6 +15,11 @@ const StyledImage = styled.img`
     max-width: 7.5rem;
     max-height: 7.5rem;
   }
+
+  @media print {
+    max-width: 5rem;
+    max-height: 5rem;
+  }
 `;
 
 const Image: FunctionComponent<ImageProps> = () => {
