@@ -7,5 +7,6 @@ export const colors = css`
     --color-grey-300: #666666;
     --color-grey-200: #888888;
     --color-grey-100: #aaaaaa;
+    --color-grey-50: #cccccc;
   }
 `;
