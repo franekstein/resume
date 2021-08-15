@@ -23,7 +23,7 @@ const StyledImage = styled.img`
 `;
 
 const Image: FunctionComponent<ImageProps> = () => {
-  return <StyledImage width="75px" height="75px" src={photo} alt="Damian Kieliszek" />;
+  return <StyledImage width="150px" height="150px" src={photo} alt="Damian Kieliszek" />;
 };
 
 export default Image;
